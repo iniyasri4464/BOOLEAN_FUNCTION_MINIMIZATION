@@ -17,6 +17,7 @@ Hardware – PCs, Cyclone II , USB flasher
 **Theory**
 
 **Logic Diagram**
+![image](https://github.com/iniyasri4464/BOOLEAN_FUNCTION_MINIMIZATION/assets/152419072/07e15d59-9322-4033-acf2-f34702e28ede)
 
 **Procedure**
 
@@ -34,17 +35,29 @@ Hardware – PCs, Cyclone II , USB flasher
 **Program:**
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+```
+Developed by:Iniyasri.s
+RegisterNumber:212223230081
 
-Developed by: RegisterNumber:*/
+// Verilog model:Circuit with boolean expressions
+module ex02 (E,F,A,B,C,D);
+input A, B, C, D;
+output E,F;
+assign E = A || (B && C) || ((!B) && D);
+assign F=((!B) && C) || ( B && (!C) && (!D));
+endmodule
+
+```
+*/
 
 
 **RTL realization**
+![image](https://github.com/iniyasri4464/BOOLEAN_FUNCTION_MINIMIZATION/assets/152419072/f38c47d7-186a-4f40-b0c5-85b3276215ad)
 
-**Output:**
 
-**RTL**
 
 **Timing Diagram**
+![image](https://github.com/iniyasri4464/BOOLEAN_FUNCTION_MINIMIZATION/assets/152419072/83552d90-7f08-41f6-8a3f-6aee29c6ea71)
 
 **Result:**
 
